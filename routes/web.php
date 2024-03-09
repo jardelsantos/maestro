@@ -1,6 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// HTTP Actions
+Route::get('/', [SiteController::class, 'index'] );
+Route::get('contato', [SiteController::class, 'contato']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
