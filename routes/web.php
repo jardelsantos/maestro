@@ -15,5 +15,7 @@ use App\Http\Controllers\SiteController;
 */
 // HTTP Actions
 Route::get('/', [SiteController::class, 'index'] );
-Route::get('contato', [SiteController::class, 'contato']);
 
+Route::get('contato', [SiteController::class, 'contato'])->name('site.contato');
+
+Route::post('contato', [SiteController::class, 'salvar']);

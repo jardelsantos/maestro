@@ -1,0 +1,3 @@
+<div>
+    {{ Session('sucesso') }}
+</div>
